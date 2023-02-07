@@ -1,0 +1,14 @@
+
+
+.login_screen {
+    background: url('/public/image/png/Rectangle\ 77.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95% 95%;
+}
+
+.typo_login {
+    position: fixed;
+    bottom: 180px;
+    left: 150px
+}

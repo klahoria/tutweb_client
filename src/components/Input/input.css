@@ -1,0 +1,49 @@
+.custom_input {
+    border: 1.8px solid var(--light-green) !important;
+    outline: 0;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+span {
+    cursor: pointer;
+}
+
+input[type="checkbox"]+span:before {
+    content: "";
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid var(--dark-green);
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:checked+span:before {
+    content: "\2713";
+    font-size: 14px;
+    color: black;
+    background-color: var(--light-green);
+    border: 1px solid var(--light-green);
+    line-height: 17px;
+    outline-width: 74px;
+}
+
+
+.eye_password {
+    position: absolute;
+    right: 25px;
+    top: 42px;
+}
+
+.eye_password > * {
+    font-size: 24px;
+}

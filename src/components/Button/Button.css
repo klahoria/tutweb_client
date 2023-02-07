@@ -1,0 +1,17 @@
+.custom_button  {
+    background-color: var(--dark-green);
+    line-height: 35px;
+    font-size: 16px;
+    transition: all 250ms ease-in-out;
+}
+
+.in_active {
+    background-color: transparent !important;
+    line-height: 35px;
+    font-size: 16px;
+    transition: all 250ms ease-in-out;
+}
+
+.bg-lignt-green {
+    background-color: var(--light-color) !important;
+}
