@@ -1,0 +1,12 @@
+.card_grad > div:first-child > span {
+    background: linear-gradient(90deg, #136CB5 0%, #49BBBD 100%) !important;
+    color: transparent;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400 !important;   
+}
+
+.card_grad > div:nth-child(2) > span {
+    color:  rgba(1, 5, 20, 0.8) !important;
+    font-weight: 400 !important;   
+}

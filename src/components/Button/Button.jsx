@@ -3,11 +3,19 @@ import './Button.css'
 
 function Button(props) {
     return (
-        <button type={props.type || 'submit'} tabIndex={props.tabIndex || 1} className={'px-4 py-2 rounded-pill text-white border-0 custom_button' + ' ' + props.customClass} onClick={props.click}>
-            <span className={props.customClassStyle}>
-                {props.title}
-            </span>
-        </button>
+        <>
+            {!props.variant ? <button type={props.type || 'submit'} tabIndex={props.tabIndex || 1} className={'px-4 py-2 rounded-pill text-white border-0 custom_button ' + props.customClass} onClick={props.click}>
+                <span className={props.customClassStyle}>
+                    {props.title}
+                </span>
+            </button> :
+            <button type={props.type || 'submit'} tabIndex={props.tabIndex || 1} className={'px-4 py-2 rounded-pill text-white ' + props.customClass} onClick={props.click} style={{border:`1px solid ${props.border || '#fff'}`,color: props.Textcolor,background: `${props.background}`}}>
+                <span className={props.customClassStyle}>
+                    {props.title}
+                </span>
+            </button>
+            }
+        </>
     )
 }
 

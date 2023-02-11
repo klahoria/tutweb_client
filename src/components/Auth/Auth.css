@@ -8,7 +8,7 @@
 }
 
 .typo_login {
-    position: fixed;
+    position: absolute;
     bottom: 180px;
     left: 150px
 }

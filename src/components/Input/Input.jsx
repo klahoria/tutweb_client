@@ -34,11 +34,11 @@ function Input(props) {
                 {(props.type !== 'checkbox' && props.type !== 'radio') && (<p className='mb-1 fw-bold'>
                     {props.title}
                 </p>)}
-                <input id={labelFor} ref={inputRef} className="px-4 py-3 w-100  custom_input rounded-pill" type={props.type == 'password' ? showPassword ? 'text' : 'password' : props.type} placeholder={props.placeholder} disabled={props.disabled || false} />
+                <input id={labelFor} ref={inputRef} className="px-4 py-3 w-100  custom_input rounded-pill" type={props.type === 'password' ? showPassword ? 'text' : 'password' : props.type} placeholder={props.placeholder} disabled={props.disabled || false} />
                 {(props.type === 'checkbox' || props.type === 'radio') && (<span className='mb-1 px-2 fw-bold'>
                     {props.title}
                 </span>)}
-                {props.type == 'password' && <>
+                {props.type === 'password' && <>
                     <span className='eye_password'>
                         {!showPassword ?
                             <BsFillEyeFill tooltip="show Password" className="pointer" onClick={() => setshowPassword(!showPassword)} />

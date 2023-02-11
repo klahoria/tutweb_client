@@ -15,7 +15,7 @@ function Auth() {
         }
     }
     return (
-        <>
+        <div className='h-100 row'>
             <div className="col-md-6 d-none d-md-block login_screen">
                 <div className="col-12 text-center">
                     <div className="typo_login">
@@ -38,18 +38,18 @@ function Auth() {
                                     <ToggleButton active={activeScreen} changeActive={() => setActiveScreen()} />
                                 </div>
 
-                                {activeScreen == 'Login' && <div className='text-center py-4'>
+                                {activeScreen === 'Login' && <div className='text-center py-4'>
                                     <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
                                 </div>}
                                 <>
-                                    {activeScreen == 'Login' ? <Login /> : <Register />}
+                                    {activeScreen === 'Login' ? <Login /> : <Register />}
                                 </>
                             </div>
                         </div>
                     </div>
                 </>
             </div>
-        </>
+        </div>
     )
 }
 

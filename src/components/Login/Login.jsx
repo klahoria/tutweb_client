@@ -16,7 +16,7 @@ function Login() {
             </div>
 
             <div className='checkbox pt-3 '>
-                <div className="d-flex justify-content-between">
+                <div className="d-flex flex-wrap justify-content-between">
                     <Input type="checkbox" title="Remember Me" customClass="flex-grow-1" />
                     <span className="fw-light">Forgot Password?</span>
                 </div>
@@ -24,7 +24,7 @@ function Login() {
 
             {/* button login */}
             <div className="login_button">
-                <div className="d-flex justify-content-end">
+                <div className="d-flex flex-wrap justify-content-end">
                     <div className="button_field mt-4 w-50">
                         <Button click={() => alert('hello tere')} title={"Login"} customClass="w-100" />
                     </div>

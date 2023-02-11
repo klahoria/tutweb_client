@@ -1,3 +1,40 @@
 .dashboard_page {
     background-color: var(--dark-green);
 }
+
+.background_girl {
+    background-image: url('/public/image/png/bggirl.png');
+    background-clip: content-box;
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 90% 100%;
+}
+
+.lh-30 {
+    line-height: 30px;
+}
+
+.mw-vh-36 {
+    max-width: 36vw;
+}
+
+.mw-custom {
+    max-width: 38em;
+}
+
+.multi_back {
+    background-image: url('/public/image/other/Ellipse1.png'), url('/public/image/other/Ellipse3.svg'), url('/public/image/other/Rectangle2.svg'), url('/public/image/other/Rectangle3.svg');
+    background-position: left 0px top 0px, left 50% top 50%, left 70% top 0%, left 98% top 100%;
+    height: max-content;
+    background-repeat: no-repeat;
+    background-size: 75px, 40px, 130px, 170px;
+    max-width: calc(100% - 400px);
+}
+
+.image_container {
+    max-width: 400px;
+    width: 100%;
+    height: 300px;
+    min-width: 320px;
+}

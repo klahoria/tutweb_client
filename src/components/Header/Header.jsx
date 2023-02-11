@@ -9,7 +9,7 @@ function Header() {
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <a className="navbar-brand" href="#"><img width="80px" src="/image/svg/logo.svg" alt=""  /></a>
+                <Link className="navbar-brand" to="#"><img width="80px" src="/image/svg/logo.svg" alt=""  /></Link>
                 <div className="w-100">
                     <div className="collapse navbar-collapse justify-content-end align-items-center" id="navbarTogglerDemo03">
                         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">

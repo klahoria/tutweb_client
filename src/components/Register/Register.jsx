@@ -24,7 +24,7 @@ function Register() {
 
             {/* button login */}
             <div className="login_button">
-                <div className="d-flex justify-content-end">
+                <div className="d-flex flex-wrap justify-content-end">
                     <div className="button_field mt-4 w-50">
                         <Button click={() => alert('hello tere')} title={"Register"} customClass="w-100" />
                     </div>
