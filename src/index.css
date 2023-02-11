@@ -24,3 +24,15 @@ code {
 .pointer {
   cursor: pointer;
 }
+
+.lh-42 {
+  line-height: 42px !important;
+}
+
+.ws-7 {
+  word-spacing: 7px;
+}
+
+.ls-1 {
+  letter-spacing: 1px;
+}

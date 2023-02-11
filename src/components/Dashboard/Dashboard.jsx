@@ -6,6 +6,7 @@ import Button from '../Button/Button';
 import GradientCard from '../GradientCard/GradientCard';
 import DetailCard from '../Card/DetailCard';
 import DetailCardImage from '../Card/DetailCardImage';
+import { Link } from 'react-router-dom';
 
 
 function Dashboard() {
@@ -24,7 +25,10 @@ function Dashboard() {
 
             <div className=' text-start px-0 '>
               <Button title="Join For Free" customClass="px-5 in_active bg-lignt-green" customClassStyle="text-white fw-bold" />
-              <AiFillPlayCircle style={{ width: "60px", height: "60px" }} className="text-white ms-3" /> <span className="ms-3 fw-bold">Watch how it works</span></div>
+              <span className='d-inline-block'>
+                <AiFillPlayCircle style={{ width: "60px", height: "60px" }} className="text-white" />
+              </span>
+              <span className="ms-3 fw-bold">Watch how it works</span></div>
           </div>
         </div>
       </div>
@@ -85,10 +89,14 @@ function Dashboard() {
       </div>
 
 
-      <div className='multi_back'>
-        <div className="d-flex flex-wrap">
-          <div className='w-50'></div>
-          <div className='image_container'><img src="image/png/vidthumb.png" alt="" style={{maxWidth: '400px'}}/></div>
+      <div className='multi_back mx-0 mx-md-auto py-3 my-5'>
+        <div className="row flex-wrap justify-content-between">
+          <div className='col'>
+            <h3 className='px-4 lh-base'>Everything you can do in a physical <br /> classroom, you can do with TOTC</h3>
+            <p className='px-4 d-block lh-base lh-42 ws-7 ls-1'>TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
+            <Link to="" className="underline px-4">Learn More</Link>
+          </div>
+          <div className='px-md-5 col text-end'><img src="image/png/vidthumb.png" alt="" className='image_thumb' /></div>
         </div>
       </div>
 
