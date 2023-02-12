@@ -36,3 +36,11 @@ code {
 .ls-1 {
   letter-spacing: 1px;
 }
+
+.wc-70{
+  max-width: calc(70%);
+}
+
+.mw-670 {
+  max-width: 400px;
+}

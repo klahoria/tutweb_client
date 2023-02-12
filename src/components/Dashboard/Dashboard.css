@@ -45,3 +45,11 @@
     min-width: 320px;
     width: 100%;
 }
+
+.mw-586 {
+    max-width: 586px;
+}
+
+.margin-top-negaitve {
+    margin-top: -350px !important;
+}
