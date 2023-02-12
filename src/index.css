@@ -5,6 +5,8 @@
   --light-color: #ffffff4d;
   --text-grey: #696984;
   --body-gray: #ececec;
+  --hilight: #00CBB8;
+  --dblue: #2F327D;
 }
 
 .light-gray {
@@ -37,10 +39,18 @@ code {
   letter-spacing: 1px;
 }
 
-.wc-70{
+.wc-70 {
   max-width: calc(70%);
 }
 
 .mw-670 {
   max-width: 400px;
+}
+
+.hilight {
+  color: var(--hilight);
+}
+
+.dblue {
+  color: var(--dblue);
 }

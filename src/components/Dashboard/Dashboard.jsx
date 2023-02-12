@@ -8,6 +8,7 @@ import DetailCard from '../Card/DetailCard';
 import DetailCardImage from '../Card/DetailCardImage';
 import { Link } from 'react-router-dom';
 import Card from '../Card/Card';
+import CustomButton from '../CustomButtons/CustomButton';
 
 
 function Dashboard() {
@@ -94,7 +95,7 @@ function Dashboard() {
         <div className="row flex-wrap justify-content-between">
           <div className='col-md-auto'>
             <h3 className='px-md-4 lh-base'>Everything you can do in a physical <br /> classroom, you can do with TOTC</h3>
-            <p className='px-md-4 d-block lh-base lh-42 ws-7 ls-1'>TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
+            <p className='px-md-4 d-block lh-base lh-42 ws-7 ls-1 mw-586'>TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
             <Link to="" className="underline px-md-4">Learn More</Link>
           </div>
           <div className='px-md-5 col-md-auto text-end'><img src="image/png/vidthumb.png" alt="" className='image_thumb' /></div>
@@ -104,7 +105,7 @@ function Dashboard() {
       {/* Fearures card */}
 
       <div className="our_features">
-        <h2 className="text-center">Our Features</h2>
+        <h2 className="text-center hilight fw-bold"><span className='dblue'>Our</span> Features</h2>
         <p className="py-4 text-center ws-1 light-gray">This very extraordinary feature, can make learning activities more efficient</p>
 
         <div className="col-md-10 mx-auto">
@@ -114,9 +115,9 @@ function Dashboard() {
               <img src="/image/png/frame1.png" className="w-100" alt="" />
             </div>
             <div className="col-md-auto flex-grow-1 py-5">
-              <h2 className='px-md-5'>
-                A user interface designed <br /> for the classroom
-              </h2>
+              <h1 className='px-md-5 fw-bold dblue'>
+                A <span className="hilight">user interface&nbsp;</span>designed <br /> for the classroom
+              </h1>
               <div className='px-md-5'>
                 {/* <ul className='list-unstyled'> */}
                 <div className='py-3 mw-670 d-flex align-items-center'>
@@ -143,9 +144,12 @@ function Dashboard() {
           </div>
           <div className="row margin-top-negaitve justify-content-between">
             <div className="col-md-auto">
-              <h2>
-                Tools For Teachers <br /> And Learners
-              </h2>
+              <h1 className='dblue'>
+                <span className="hilight">
+                  Tools&nbsp;
+                </span>
+                For Teachers <br /> And Learners
+              </h1>
               <p className='light-gray mw-586 fs-5'>
                 Class has a dynamic set of teaching tools built to be deployed and used during class.
                 Teachers can handout assignments in real-time for students to complete and submit.
@@ -159,22 +163,103 @@ function Dashboard() {
       </div>
 
 
-      <div className="row box_tour">
+      <div className="row box_tour py-5 mt-5">
         <div className="col-md-10 mx-auto">
           <div className='row justify-content-between align-items-center'>
             <div className="col-md-auto">
               <img src="/image/png/viewTour.png" alt="" />
             </div>
             <div className="col-md-auto">
-              <h1>Assessments, <br /> Quizzes, Tests</h1>
-              <p className='mw-586 fs-5'>Easily launch live assignments, quizzes, and tests.
+              <h1 className='dblue'>Assessments, <br />
+                <span className='hilight'>
+                  Quizzes
+                </span>
+                , Tests
+              </h1>
+              <p className='mw-586 fs-5 light-gray'>Easily launch live assignments, quizzes, and tests.
                 Student results are automatically entered in the online gradebook.</p>
             </div>
           </div>
         </div>
       </div>
 
+      <div className="row box_tour py-5 mt-5">
+        <div className="col-md-10 mx-auto">
+          <div className='row justify-content-between align-items-center'>
+            <div className="col-md-auto">
+              <h1 className='hilight'>Class Management <br />
+                <span className='dblue'>
+                  Tools for Educators
+                </span>
+              </h1>
+              <p className='mw-586 fs-5 light-gray'>Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.
+              </p>
+            </div>
+            <div className="col-md-auto">
+              <img src="/image/png/one_one_d.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div className="row box_tour py-5 mt-5">
+        <div className="col-md-10 mx-auto">
+          <div className='row justify-content-between align-items-center'>
+            <div className="col-md-auto">
+              <img src="/image/png/cmt.png" alt="" />
+            </div>
+            <div className="col-md-auto">
+              <h1 className='dblue'>One-on-One <br />
+                <span className='hilight'>
+                  Discussion
+                </span>
+              </h1>
+              <p className='mw-586 fs-5 light-gray'>
+                Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="row justify-content-center">
+        <Button customClass={'py-3'} variant={'outlined'} title={'See more features'} border="#49BBBD" background="transparent" Textcolor="#49BBBD" maxWidth="250px" />
+      </div>
+
+
+      <div className="row box_tour py-5 mt-5">
+        <div className="col-md-10 mx-auto">
+          <div className='row justify-content-between align-items-start'>
+            <div className="col-md-auto">
+              <h1 className='dblue mb-4'><br />
+                <span className='light-gray fs-6'>
+                  <span className='d-flex align-items-center justify-content-start'>
+                    <hr style={{ maxWidth: '100px', width: "100%" }} /> &nbsp;&nbsp;&nbsp; TESTIMONIAL
+                  </span>
+                </span>
+                What They Say?
+              </h1>
+              <p className='mw-586 fs-5 light-gray'>
+                TOTC has got more than 100k positive ratings from our users around the world.
+              </p>
+              <p className='mw-586 fs-5 light-gray'>
+                Some of the students and teachers were greatly helped by the Skilline.
+              </p>
+              <p className='mw-586 fs-5 light-gray'>
+                Are you too? Please give your assessment
+              </p>
+
+              <div className="custom_fields">
+                <CustomButton title={"Write your assessment"} customClass="p-3 fs-5" border="var(--hilight)" textColor="var(--hilight)" maxWidth="300px" role="button" />
+              </div>
+
+            </div>
+            <div className="col-md-auto">
+              <img src="/image/png/wst.png" style={{ maxHeight: '70vh' }} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
