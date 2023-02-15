@@ -9,6 +9,7 @@ import DetailCardImage from '../Card/DetailCardImage';
 import { Link } from 'react-router-dom';
 import Card from '../Card/Card';
 import CustomButton from '../CustomButtons/CustomButton';
+import VerticalCard from './VerticalCard';
 
 
 function Dashboard() {
@@ -82,8 +83,8 @@ function Dashboard() {
         </p>
 
         <div className='d-flex flex-wrap align-items-center justify-content-center'>
-          <DetailCardImage bg_image="/image/png/card_1.png" customClass="w-50 py-3 fw-bold" sub1="FOR INSTRUCTORS" variant="outlined" border="white" Textcol-md-autoor="white" background="transparent" title="start a class today" />
-          <DetailCardImage bg_image="/image/png/card_2.png" customClass="w-50 py-3 fw-bold" sub1="FOR STUDENTS" variant="outlined" border="#23BDEEE5" Textcol-md-autoor="white" background="#23BDEEE5" title="start a class today" />
+          <DetailCardImage bg_image="/image/png/card_1.png" customClass="w-50 py-3 fw-bold text-white" sub1="FOR INSTRUCTORS" variant="outlined" border="white" Textcol-md-autoor="white" background="transparent" title="start a class today" />
+          <DetailCardImage bg_image="/image/png/card_2.png" customClass="w-50 py-3 fw-bold text-white" sub1="FOR STUDENTS" variant="outlined" border="#23BDEEE5" Textcol-md-autoor="white" background="#23BDEEE5" title="Enter access code" />
           {/* <DetailCardImage bg_image="/image/png/card_1.png" sub1="Online Billing," sub2="Invoicing, & Contracts" subText="Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts" /> */}
         </div>
 
@@ -110,11 +111,11 @@ function Dashboard() {
 
         <div className="col-md-10 mx-auto">
 
-          <div className="row">
-            <div className="col-md-auto wc-70">
-              <img src="/image/png/frame1.png" className="w-100" alt="" />
+          <div className="row justify-content-between">
+            <div className="col-md-auto">
+              <img className='mw-700' src="/image/png/frame1.png" alt="" />
             </div>
-            <div className="col-md-auto flex-grow-1 py-5">
+            <div className="col-md-auto py-5">
               <h1 className='px-md-5 fw-bold dblue'>
                 A <span className="hilight">user interface&nbsp;</span>designed <br /> for the classroom
               </h1>
@@ -156,7 +157,7 @@ function Dashboard() {
               </p>
             </div>
             <div className="col-md-auto">
-              <img src="/image/png/frame2.png" alt="" />
+              <img className='mw-700' src="/image/png/frame2.png" alt="" />
             </div>
           </div>
         </div>
@@ -167,7 +168,7 @@ function Dashboard() {
         <div className="col-md-10 mx-auto">
           <div className='row justify-content-between align-items-center'>
             <div className="col-md-auto">
-              <img src="/image/png/viewTour.png" alt="" />
+              <img className='mw-700' src="/image/png/viewTour.png" alt="" />
             </div>
             <div className="col-md-auto">
               <h1 className='dblue'>Assessments, <br />
@@ -196,7 +197,7 @@ function Dashboard() {
               </p>
             </div>
             <div className="col-md-auto">
-              <img src="/image/png/one_one_d.png" alt="" />
+              <img className='mw-700' src="/image/png/one_one_d.png" alt="" />
             </div>
           </div>
         </div>
@@ -206,7 +207,7 @@ function Dashboard() {
         <div className="col-md-10 mx-auto">
           <div className='row justify-content-between align-items-center'>
             <div className="col-md-auto">
-              <img src="/image/png/cmt.png" alt="" />
+              <img className='mw-700' src="/image/png/cmt.png" alt="" />
             </div>
             <div className="col-md-auto">
               <h1 className='dblue'>One-on-One <br />
@@ -225,6 +226,91 @@ function Dashboard() {
       <div className="row justify-content-center">
         <Button customClass={'py-3'} variant={'outlined'} title={'See more features'} border="#49BBBD" background="transparent" Textcolor="#49BBBD" maxWidth="250px" />
       </div>
+
+
+      <div className="blue_back row my-5 justify-content-center">
+        <div className="py-5 mt-5 col-md-10">
+          <h1>Explore Course</h1>
+          <p>Ut sed eros finibus, placerat orci id, dapibus.</p>
+        </div>
+
+        <div className="col-md-12 py-5">
+          <div className='offset-md-2 pb-5 px-3'>
+            <span>Lorem Ipsum</span>
+          </div>
+          <div className='d-flex align-items-center justify-content-between px-5 offset-2 table-responsive navbar-nav-scroll' style={{ overflowY: 'hidden' }}>
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+          </div>
+        </div>
+
+        <div className="col-md-12 py-5">
+          <div className='offset-md-2 pb-5 px-3'>
+            <span>Quisque a Consequat</span>
+          </div>
+          <div className='d-flex align-items-center justify-content-between px-5 offset-2 table-responsive navbar-nav-scroll' style={{ overflowY: 'hidden' }}>
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+          </div>
+        </div>
+
+        <div className="col-md-12 py-5">
+          <div className='offset-md-2 pb-5 px-3'>
+            <span>Aenean Facilisis</span>
+          </div>
+          <div className='d-flex align-items-center justify-content-between px-5 offset-2 table-responsive navbar-nav-scroll' style={{ overflowY: 'hidden' }}>
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+            <VerticalCard />
+          </div>
+        </div>
+
+      </div>
+
 
 
       <div className="row box_tour py-5 mt-5">
@@ -255,7 +341,7 @@ function Dashboard() {
 
             </div>
             <div className="col-md-auto">
-              <img src="/image/png/wst.png" style={{ maxHeight: '70vh' }} alt="" />
+              <img className='mw-700' src="/image/png/wst.png" style={{ maxHeight: '70vh' }} alt="" />
             </div>
           </div>
         </div>

@@ -51,5 +51,19 @@
 }
 
 .margin-top-negaitve {
-    margin-top: -350px !important;
+    margin-top: -100px !important;
+}
+
+.blue_back {
+    background: url('/public/image//svg/Rectangle.svg');
+    background-repeat: no-repeat;
+}
+
+.mw-700 {
+    width: 100%;
+    max-width: 700px;
+}
+
+img {
+    object-fit: contain;
 }
