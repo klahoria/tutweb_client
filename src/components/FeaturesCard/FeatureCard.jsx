@@ -16,7 +16,7 @@ function FeatureCard(props) {
             {/* <Title {...props} /> */}
             <div className="col-md-10 mx-auto">
 
-                <div className={`row justify-content-between align-items-center ${props.variant == 'reverse' ? 'flex-row-reverse' : ''}`}>
+                <div className={`row justify-content-between  ${props.variant == 'reverse' ? 'flex-row-reverse' : ''} ${props.customalign ? props.customalign == 'center' ? 'align-items-center' : props.customalign == 'start' ? 'align-items-start' : 'align-items-end' : 'align-items-center'}`}>
                     <div className="col-md-auto">
                         <img style={{ maxWidth: props.imageMaxWidth }} src={props.image} alt={props.image} />
                     </div>

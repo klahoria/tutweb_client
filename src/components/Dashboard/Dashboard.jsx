@@ -55,12 +55,7 @@ function Dashboard() {
       {/* <div className="ubder_circle row"></div> */}
 
       <div className="success_page text-center mt-5 pt-5">
-        {/* <h1 className='mx-auto px-md-5 py-3 text-subtext w-50'>Our Success</h1>
-        <p className='text-subtext lh-30 d-md-block d-none mw-vh-36 px-md-5 mx-md-auto'>Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci.</p>
-        <p className='text-subtext lh-30 px-md-5 d-block d-md-none'>Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci.</p> */}
-
         <Title title="Our Success" subTitle="Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci." maxWidth="550px" />
-
 
         <div className='d-flex flex-wrap align-items-center justify-content-center'>
           <GradientCard textMain="15K+" subText="Students" />
@@ -78,10 +73,6 @@ function Dashboard() {
 
 
         <div className='d-flex flex-wrap justify-content-center py-5'>
-          {/* {[...Array(3)].map((item) => {
-            console.log(item)
-            return <span>hello {item}</span>
-          })} */}
           <DetailCard img="/image/svg/pic3.svg" sub1="Online Billing," sub2="Invoicing, & Contracts" subText="Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts" />
           <DetailCard img="/image/svg/pics.svg" sub1="Easy Scheduling &," sub2="Attendence Tracking" subText="Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance" />
           <DetailCard img="/image/svg/pic.svg" sub1="Customer Tacking" subText="Automate and track emails to individuals or groups. Skilline’s built-in system helps organize your organization " />
@@ -97,7 +88,6 @@ function Dashboard() {
         <div className='d-flex flex-wrap align-items-center justify-content-center'>
           <DetailCardImage bg_image="/image/png/card_1.png" customClass="w-50 py-3 fw-bold text-white" sub1="FOR INSTRUCTORS" variant="outlined" border="white" Textcol-md-autoor="white" background="transparent" title="start a class today" />
           <DetailCardImage bg_image="/image/png/card_2.png" customClass="w-50 py-3 fw-bold text-white" sub1="FOR STUDENTS" variant="outlined" border="#23BDEEE5" Textcol-md-autoor="white" background="#23BDEEE5" title="Enter access code" />
-          {/* <DetailCardImage bg_image="/image/png/card_1.png" sub1="Online Billing," sub2="Invoicing, & Contracts" subText="Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts" /> */}
         </div>
 
 
@@ -107,9 +97,6 @@ function Dashboard() {
       <div className='multi_back mx-0 mx-md-auto py-3 my-5'>
         <div className="row flex-wrap justify-content-between">
           <div className='col-md-auto'>
-            {/* <h3 className='px-md-4 lh-base'>Everything you can do in a physical <br /> classroom, you can do with TOTC</h3>
-            <p className='px-md-4 d-block lh-base lh-42 ws-7 ls-1 mw-586'>TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.</p> */}
-
             <Title title={"Everything you can do in a physical"} custom_title_class="px-4" breakPoint={"classroom, "} gradient={"you can do with TOTC"} subTitle="TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system." maxWidth="600px" gradientColor="#00CBB8" />
 
             <Link to="" className="underline px-md-4">Learn More</Link>
@@ -135,68 +122,7 @@ function Dashboard() {
 
 
 
-      <FeatureCard title={[{ lable: 'title', value: 'Our', class: "dblue", fontSize: '18px' }, { lable: 'title', value: 'Features', class: "hilight", fontSize: '18px' }]} subTitle="This very extraordinary feature, can make learning activities more efficient" />
-      <div className="our_features">
-        <h2 className="text-center hilight fw-bold"><span className='dblue'>Our</span> Features</h2>
-        <p className="py-4 text-center ws-1 light-gray">This very extraordinary feature, can make learning activities more efficient</p>
-
-        <div className="col-md-10 mx-auto">
-
-          <div className="row justify-content-between">
-            <div className="col-md-auto">
-              <img className='mw-700' src="/image/png/frame1.png" alt="" />
-            </div>
-            <div className="col-md-auto py-5">
-              <h1 className='px-md-5 fw-bold dblue'>
-                A <span className="hilight">user interface&nbsp;</span>designed <br /> for the classroom
-              </h1>
-              <div className='px-md-5'>
-                {/* <ul className='list-unstyled'> */}
-                <div className='py-3 mw-670 d-flex align-items-center'>
-                  <Card image="/image/png/list_icon/squares.png" />
-                  <span className='ps-md-3'>
-                    Teachers don’t get lost in the grid view and have a dedicated Podium space.
-                  </span>
-                </div>
-                <div className='py-3 mw-670 d-flex align-items-center'>
-                  <Card image="/image/png/list_icon/copy.png" />
-                  <span className='ps-md-3'>
-                    TA’s and presenters can be moved to the front of the class.
-                  </span>
-                </div>
-                <div className='py-3 mw-670 d-flex align-items-center'>
-                  <Card image="/image/png/list_icon/persons.png" />
-                  <span className='ps-md-3'>
-                    Teachers can easily see all students and class data at one time.
-                  </span>
-                </div>
-                {/* </ul> */}
-              </div>
-            </div>
-          </div>
-          <div className="row margin-top-negaitve justify-content-between">
-            <div className="col-md-auto">
-              <h1 className='dblue'>
-                <span className="hilight">
-                  Tools&nbsp;
-                </span>
-                For Teachers <br /> And Learners
-              </h1>
-              <p className='light-gray mw-586 fs-5'>
-                Class has a dynamic set of teaching tools built to be deployed and used during class.
-                Teachers can handout assignments in real-time for students to complete and submit.
-              </p>
-            </div>
-            <div className="col-md-auto">
-              <img className='mw-700' src="/image/png/frame2.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
+      <FeatureCard title={[{ lable: 'title', value: 'Our', class: "dblue", fontSize: '18px' }, { lable: 'title', value: 'Features', class: "hilight", fontSize: '18px' }]} subTitle="This very extraordinary feature, can make learning activities more efficient" image="/image/png/frame1.png" imageMaxWidth="670px" customalign="start" />
 
 
       <div className="row box_tour py-5 mt-5">
