@@ -25,12 +25,12 @@
 
 .multi_back {
     background-image: url('/public/image/other/Ellipse1.png'), url('/public/image/other/Ellipse3.svg'), url('/public/image/other/Rectangle2.svg'), url('/public/image/other/Rectangle3.svg');
-    background-position: left 0px top 0px, left 50% top 50%, left 71% top 0%, left 99% top 100%;
+    background-position: left 0% top 0px, left 50% top 50%, left 72% top 0%, left 98.5% top 100%;
     /* height: max-content; */
     /* height: 400px; */
     background-repeat: no-repeat;
     background-size: 75px, 40px, 130px, 170px;
-    max-width: calc(100% - 400px);
+    max-width: 1500px;
 }
 
 .image_container {

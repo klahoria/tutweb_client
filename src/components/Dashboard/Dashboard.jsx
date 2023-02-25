@@ -10,7 +10,9 @@ import { Link } from 'react-router-dom';
 import Card from '../Card/Card';
 import CustomButton from '../CustomButtons/CustomButton';
 import VerticalCard from './VerticalCard';
-
+import FeatureCard from '../FeaturesCard/FeatureCard'
+import Title from '../Title/Title';
+import TextView from '../Styled/TextViewer';
 
 function Dashboard() {
   return (
@@ -18,7 +20,7 @@ function Dashboard() {
       <div className="header row dashboard_page px-0 justify-content-center border_change">
         <Header />
         <div className="background_girl d-flex flex-wrap align-items-center justify-content-around">
-          <div className="w-75">
+          <div className="w-75 d-md-block">
 
             <h1 className='fw-bold text-start  text-white'>
               <span>Studying </span> Online is now <br />much easier
@@ -33,13 +35,32 @@ function Dashboard() {
               </span>
               <span className="ms-3 fw-bold">Watch how it works</span></div>
           </div>
+          <div className="w-100 px-3 d-md-none d-block">
+
+            <h1 className='fw-bold text-start  text-white'>
+              <span>Studying </span> Online is now <br />much easier
+            </h1>
+            <p className='pe-5 pt-4 text-white text-start'>TOTC is an interesting platform that will teach you in more an interactive way</p>
+
+
+            <div className=' text-start px-0 '>
+              <Button title="Join For Free" customClass="px-md-5 in_active bg-lignt-green" customClassStyle="text-white fw-bold" />
+              {/* <span className='d-inline-block'>
+                <AiFillPlayCircle style={{ width: "60px", height: "60px" }} className="text-white" />
+              </span> */}
+              <span className="ms-3 fw-bold">Watch how it works</span></div>
+          </div>
         </div>
       </div>
       {/* <div className="ubder_circle row"></div> */}
 
       <div className="success_page text-center mt-5 pt-5">
-        <h1 className='mx-auto px-md-5 py-3 text-subtext w-50'>Our Success</h1>
-        <p className='text-subtext lh-30 mw-vh-36 px-md-5 mx-md-auto'>Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci.</p>
+        {/* <h1 className='mx-auto px-md-5 py-3 text-subtext w-50'>Our Success</h1>
+        <p className='text-subtext lh-30 d-md-block d-none mw-vh-36 px-md-5 mx-md-auto'>Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci.</p>
+        <p className='text-subtext lh-30 px-md-5 d-block d-md-none'>Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci.</p> */}
+
+        <Title title="Our Success" subTitle="Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci." maxWidth="550px" />
+
 
         <div className='d-flex flex-wrap align-items-center justify-content-center'>
           <GradientCard textMain="15K+" subText="Students" />
@@ -53,14 +74,7 @@ function Dashboard() {
       </div>
 
       <div className="page_3 text-center">
-        <h3 className='text-center'>
-          All-in-one
-          <span>
-            Cloud software
-          </span>
-        </h3>
-        <span className='text-center mw-vh-36 lh-30 light-gray'>TOTC is one powerful online software suite that combines all the tools <br /> needed to run a successful school or office.
-        </span>
+        <Title title="All-in-one Clound Software" subTitle="TOTC is one powerful online software suite that combines all the tools needed to run a successful school or office." maxWidth="500px" />
 
 
         <div className='d-flex flex-wrap justify-content-center py-5'>
@@ -77,10 +91,8 @@ function Dashboard() {
 
 
       <div className='text-center'>
-        <h3>What is TOTC?</h3>
-        <p className="w-50 mx-auto mw-custom light-gray">
-          TOTC is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.
-        </p>
+        <Title title="What is TOTC?" subTitle="TOTC is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place" maxWidth="600px" />
+
 
         <div className='d-flex flex-wrap align-items-center justify-content-center'>
           <DetailCardImage bg_image="/image/png/card_1.png" customClass="w-50 py-3 fw-bold text-white" sub1="FOR INSTRUCTORS" variant="outlined" border="white" Textcol-md-autoor="white" background="transparent" title="start a class today" />
@@ -95,16 +107,35 @@ function Dashboard() {
       <div className='multi_back mx-0 mx-md-auto py-3 my-5'>
         <div className="row flex-wrap justify-content-between">
           <div className='col-md-auto'>
-            <h3 className='px-md-4 lh-base'>Everything you can do in a physical <br /> classroom, you can do with TOTC</h3>
-            <p className='px-md-4 d-block lh-base lh-42 ws-7 ls-1 mw-586'>TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
+            {/* <h3 className='px-md-4 lh-base'>Everything you can do in a physical <br /> classroom, you can do with TOTC</h3>
+            <p className='px-md-4 d-block lh-base lh-42 ws-7 ls-1 mw-586'>TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.</p> */}
+
+            <Title title={"Everything you can do in a physical"} custom_title_class="px-4" breakPoint={"classroom, "} gradient={"you can do with TOTC"} subTitle="TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system." maxWidth="600px" gradientColor="#00CBB8" />
+
             <Link to="" className="underline px-md-4">Learn More</Link>
           </div>
           <div className='px-md-5 col-md-auto text-end'><img src="image/png/vidthumb.png" alt="" className='image_thumb' /></div>
         </div>
       </div>
 
+
+      <FeatureCard image="image/png/vidthumb.png" variant="reverse" imageMaxWidth="500px" />
+
+
+
       {/* Fearures card */}
 
+      {/* <FeatureCard image="/image/png/frame1.png" /> */}
+
+      {/* <TextView color="#49BBBD" style={{ fontSize: '2em' }}>Helo this is text</TextView>
+      changes for this */}
+
+      {/* <FeatureCard title="Tools" hilight={<Title gradient={"For Teachers"} />} image="/image/png/frame1.png" subTItle=" Class has a dynamic set of teaching tools built to be deployed and used during class.
+                Teachers can handout assignments in real-time for students to complete and submit."/> */}
+
+
+
+      <FeatureCard title={[{ lable: 'title', value: 'Our', class: "dblue", fontSize: '18px' }, { lable: 'title', value: 'Features', class: "hilight", fontSize: '18px' }]} subTitle="This very extraordinary feature, can make learning activities more efficient" />
       <div className="our_features">
         <h2 className="text-center hilight fw-bold"><span className='dblue'>Our</span> Features</h2>
         <p className="py-4 text-center ws-1 light-gray">This very extraordinary feature, can make learning activities more efficient</p>
@@ -164,9 +195,13 @@ function Dashboard() {
       </div>
 
 
+
+
+
+
       <div className="row box_tour py-5 mt-5">
         <div className="col-md-10 mx-auto">
-          <div className='row justify-content-between align-items-center'>
+          <div className='row justify-content-between px-3 px-md-5 align-items-center'>
             <div className="col-md-auto">
               <img className='mw-700' src="/image/png/viewTour.png" alt="" />
             </div>
@@ -186,7 +221,7 @@ function Dashboard() {
 
       <div className="row box_tour py-5 mt-5">
         <div className="col-md-10 mx-auto">
-          <div className='row justify-content-between align-items-center'>
+          <div className='row justify-content-between px-3 px-md-5 align-items-center'>
             <div className="col-md-auto">
               <h1 className='hilight'>Class Management <br />
                 <span className='dblue'>
@@ -205,7 +240,7 @@ function Dashboard() {
 
       <div className="row box_tour py-5 mt-5">
         <div className="col-md-10 mx-auto">
-          <div className='row justify-content-between align-items-center'>
+          <div className='row justify-content-between px-3 px-md-5 align-items-center'>
             <div className="col-md-auto">
               <img className='mw-700' src="/image/png/cmt.png" alt="" />
             </div>
@@ -238,7 +273,7 @@ function Dashboard() {
           <div className='offset-md-2 pb-5 px-3'>
             <span>Lorem Ipsum</span>
           </div>
-          <div className='d-flex align-items-center justify-content-between px-5 offset-2 table-responsive navbar-nav-scroll' style={{ overflowY: 'hidden' }}>
+          <div className='d-flex align-items-center justify-content-between px-md-5 px-5 offset-md-2 table-responsive navbar-nav-scroll' style={{ overflowY: 'hidden' }}>
             <VerticalCard />
             <VerticalCard />
             <VerticalCard />
@@ -263,7 +298,7 @@ function Dashboard() {
           <div className='offset-md-2 pb-5 px-3'>
             <span>Quisque a Consequat</span>
           </div>
-          <div className='d-flex align-items-center justify-content-between px-5 offset-2 table-responsive navbar-nav-scroll' style={{ overflowY: 'hidden' }}>
+          <div className='d-flex align-items-center justify-content-between px-md-5 px-5 offset-md-2 table-responsive navbar-nav-scroll' style={{ overflowY: 'hidden' }}>
             <VerticalCard />
             <VerticalCard />
             <VerticalCard />
@@ -288,7 +323,7 @@ function Dashboard() {
           <div className='offset-md-2 pb-5 px-3'>
             <span>Aenean Facilisis</span>
           </div>
-          <div className='d-flex align-items-center justify-content-between px-5 offset-2 table-responsive navbar-nav-scroll' style={{ overflowY: 'hidden' }}>
+          <div className='d-flex align-items-center justify-content-between px-md-5 px-5 offset-md-2 table-responsive navbar-nav-scroll' style={{ overflowY: 'hidden' }}>
             <VerticalCard />
             <VerticalCard />
             <VerticalCard />
@@ -315,7 +350,7 @@ function Dashboard() {
 
       <div className="row box_tour py-5 mt-5">
         <div className="col-md-10 mx-auto">
-          <div className='row justify-content-between align-items-start'>
+          <div className='row justify-content-between px-3 px-md-5 align-items-start'>
             <div className="col-md-auto">
               <h1 className='dblue mb-4'><br />
                 <span className='light-gray fs-6'>

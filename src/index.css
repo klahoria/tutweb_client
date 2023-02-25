@@ -48,9 +48,9 @@ code {
 }
 
 .hilight {
-  color: var(--hilight);
+  color: var(--hilight) !important;
 }
 
 .dblue {
-  color: var(--dblue);
+  color: var(--dblue) !important;
 }
