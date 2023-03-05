@@ -15,7 +15,7 @@ function Auth() {
         }
     }
     return (
-        <div className='h-100 row'>
+        <div className='h-100 row mx-0'>
             <div className="col-md-6 d-none d-md-block login_screen">
                 <div className="col-12 text-center">
                     <div className="typo_login">

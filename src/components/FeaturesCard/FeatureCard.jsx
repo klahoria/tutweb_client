@@ -16,11 +16,11 @@ function FeatureCard(props) {
             {/* <Title {...props} /> */}
             <div className="col-md-10 mx-auto">
 
-                <div className={`row justify-content-between  ${props.variant == 'reverse' ? 'flex-row-reverse' : ''} ${props.customalign ? props.customalign == 'center' ? 'align-items-center' : props.customalign == 'start' ? 'align-items-start' : 'align-items-end' : 'align-items-center'}`}>
-                    <div className="col-md-auto">
-                        <img style={{ maxWidth: props.imageMaxWidth }} src={props.image} alt={props.image} />
+                <div className={`row justify-content-between  ${props.variant == 'reverse' ? 'flex-row-reverse flex-wrap-reverse' : ''} ${props.customalign ? props.customalign == 'center' ? 'align-items-center' : props.customalign == 'start' ? 'align-items-start' : 'align-items-end' : 'align-items-center'}`}>
+                    <div className="col-md-6 col-sm-12">
+                        <img style={{ maxWidth: props.imageMaxWidth, width: "100%"}} src={props.image} alt={props.image} />
                     </div>
-                    <div className="col-md-auto py-5">
+                    <div className="col-md-6 col-sm-12 py-5">
                         <h1 className='px-md-5 fw-bold dblue'>
                             A <span className="hilight">user interface&nbsp;</span>designed <br /> for the classroom
                         </h1>

@@ -16,7 +16,7 @@ import TextView from '../Styled/TextViewer';
 
 function Dashboard() {
   return (
-    <div className='pb-5'>
+    <div className='pb-5 px-3'>
       <div className="header row dashboard_page px-0 justify-content-center border_change">
         <Header />
         <div className="background_girl d-flex flex-wrap align-items-center justify-content-around">
@@ -96,36 +96,21 @@ function Dashboard() {
 
       <div className='multi_back mx-0 mx-md-auto py-3 my-5'>
         <div className="row flex-wrap justify-content-between">
-          <div className='col-md-auto'>
+          <div className='col-12 col-md-6'>
             <Title title={"Everything you can do in a physical"} custom_title_class="px-4" breakPoint={"classroom, "} gradient={"you can do with TOTC"} subTitle="TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system." maxWidth="600px" gradientColor="#00CBB8" />
 
             <Link to="" className="underline px-md-4">Learn More</Link>
           </div>
-          <div className='px-md-5 col-md-auto text-end'><img src="image/png/vidthumb.png" alt="" className='image_thumb' /></div>
+          <div className='px-md-5 col-12 col-md-6 text-end'><img src="image/png/vidthumb.png" alt="" className='image_thumb' /></div>
         </div>
       </div>
 
 
       <FeatureCard image="image/png/vidthumb.png" variant="reverse" imageMaxWidth="500px" />
 
-
-
-      {/* Fearures card */}
-
-      {/* <FeatureCard image="/image/png/frame1.png" /> */}
-
-      {/* <TextView color="#49BBBD" style={{ fontSize: '2em' }}>Helo this is text</TextView>
-      changes for this */}
-
-      {/* <FeatureCard title="Tools" hilight={<Title gradient={"For Teachers"} />} image="/image/png/frame1.png" subTItle=" Class has a dynamic set of teaching tools built to be deployed and used during class.
-                Teachers can handout assignments in real-time for students to complete and submit."/> */}
-
-
-
       <FeatureCard title={[{ lable: 'title', value: 'Our', class: "dblue", fontSize: '18px' }, { lable: 'title', value: 'Features', class: "hilight", fontSize: '18px' }]} subTitle="This very extraordinary feature, can make learning activities more efficient" image="/image/png/frame1.png" imageMaxWidth="670px" customalign="start" />
 
-
-      <div className="row box_tour py-5 mt-5">
+      <div className="row box_tour py-5 mt-5 mx-0">
         <div className="col-md-10 mx-auto">
           <div className='row justify-content-between px-3 px-md-5 align-items-center'>
             <div className="col-md-auto">
@@ -145,7 +130,7 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="row box_tour py-5 mt-5">
+      <div className="row box_tour py-5 mt-5 mx-0">
         <div className="col-md-10 mx-auto">
           <div className='row justify-content-between px-3 px-md-5 align-items-center'>
             <div className="col-md-auto">
@@ -164,7 +149,7 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="row box_tour py-5 mt-5">
+      <div className="row box_tour py-5 mt-5 mx-0">
         <div className="col-md-10 mx-auto">
           <div className='row justify-content-between px-3 px-md-5 align-items-center'>
             <div className="col-md-auto">
@@ -184,12 +169,12 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="row justify-content-center">
+      <div className="row justify-content-center mx-0">
         <Button customClass={'py-3'} variant={'outlined'} title={'See more features'} border="#49BBBD" background="transparent" Textcolor="#49BBBD" maxWidth="250px" />
       </div>
 
 
-      <div className="blue_back row my-5 justify-content-center">
+      <div className="blue_back row my-5 justify-content-center mx-0">
         <div className="py-5 mt-5 col-md-10">
           <h1>Explore Course</h1>
           <p>Ut sed eros finibus, placerat orci id, dapibus.</p>
@@ -272,12 +257,10 @@ function Dashboard() {
 
       </div>
 
-
-
-      <div className="row box_tour py-5 mt-5">
+      <div className="row box_tour py-5 mt-5 mx-0">
         <div className="col-md-10 mx-auto">
           <div className='row justify-content-between px-3 px-md-5 align-items-start'>
-            <div className="col-md-auto">
+            <div className="col-md-6 col-sm-12 py-3">
               <h1 className='dblue mb-4'><br />
                 <span className='light-gray fs-6'>
                   <span className='d-flex align-items-center justify-content-start'>
@@ -301,7 +284,7 @@ function Dashboard() {
               </div>
 
             </div>
-            <div className="col-md-auto">
+            <div className="col-md-6 col-sm-12 py-3">
               <img className='mw-700' src="/image/png/wst.png" style={{ maxHeight: '70vh' }} alt="" />
             </div>
           </div>
