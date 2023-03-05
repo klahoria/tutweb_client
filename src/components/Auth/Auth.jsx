@@ -15,9 +15,9 @@ function Auth() {
         }
     }
     return (
-        <div className='h-100 row mx-0'>
-            <div className="col-md-6 d-none d-md-block login_screen">
-                <div className="col-12 text-center">
+        <div className='h-100 row'>
+            <div className="col-md-6 px-0 d-none d-md-block login_screen">
+                <div className="col-12 px-0 text-center">
                     <div className="typo_login">
                         <h2 className='text-white'>Lorem Ipsum is simply </h2>
                         <h3 className='text-white'>Lorem Ipsum is simply </h3>
