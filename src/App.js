@@ -4,10 +4,10 @@ import Dashboard from './components/Dashboard/Dashboard'
 
 function App() {
   return (
-    <div className="container-fluid h-100-vh mx-0 p-sm-2">
+    <div className="container-fluid h-100-vh mx-0">
       <div className="vh-100">
         <Auth />
-        <div className="row">
+        <div className="">
           <Dashboard />
         </div>
       </div>
