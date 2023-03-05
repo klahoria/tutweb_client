@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Dashboard.css';
 import Header from '../Header/Header'
 import { AiFillPlayCircle } from 'react-icons/ai';
@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 import GradientCard from '../GradientCard/GradientCard';
 import DetailCard from '../Card/DetailCard';
 import DetailCardImage from '../Card/DetailCardImage';
-import { Link } from 'react-router-dom';
+import { Link, redirect } from 'react-router-dom';
 import Card from '../Card/Card';
 import CustomButton from '../CustomButtons/CustomButton';
 import VerticalCard from './VerticalCard';
@@ -15,6 +15,7 @@ import Title from '../Title/Title';
 import TextView from '../Styled/TextViewer';
 
 function Dashboard() {
+
   return (
     <div className='w-100'>
       <div className="header row dashboard_page px-0 justify-content-center border_change">
