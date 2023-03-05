@@ -16,7 +16,7 @@ import TextView from '../Styled/TextViewer';
 
 function Dashboard() {
   return (
-    <div className='pb-5 px-3'>
+    <div className='w-100'>
       <div className="header row dashboard_page px-0 justify-content-center border_change">
         <Header />
         <div className="background_girl d-flex flex-wrap align-items-center justify-content-around">
