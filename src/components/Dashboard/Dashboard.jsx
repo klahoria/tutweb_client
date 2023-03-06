@@ -7,14 +7,16 @@ import GradientCard from '../GradientCard/GradientCard';
 import DetailCard from '../Card/DetailCard';
 import DetailCardImage from '../Card/DetailCardImage';
 import { Link, redirect } from 'react-router-dom';
-import Card from '../Card/Card';
 import CustomButton from '../CustomButtons/CustomButton';
 import VerticalCard from './VerticalCard';
 import FeatureCard from '../FeaturesCard/FeatureCard'
 import Title from '../Title/Title';
-import TextView from '../Styled/TextViewer';
 
 function Dashboard() {
+
+  useEffect(()=>{
+    return redirect('/login')
+  },[])
 
   return (
     <div className='w-100'>
@@ -46,9 +48,6 @@ function Dashboard() {
 
             <div className=' text-start px-0 '>
               <Button title="Join For Free" customClass="px-md-5 in_active bg-lignt-green" customClassStyle="text-white fw-bold" />
-              {/* <span className='d-inline-block'>
-                <AiFillPlayCircle style={{ width: "60px", height: "60px" }} className="text-white" />
-              </span> */}
               <span className="ms-3 fw-bold">Watch how it works</span></div>
           </div>
         </div>
