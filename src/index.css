@@ -18,6 +18,10 @@ body {
   /* background-color: var(--body-gray) !important; */
 }
 
+div#root > *:-webkit-scrollbar {
+  display: none !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

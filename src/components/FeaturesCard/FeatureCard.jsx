@@ -8,7 +8,7 @@ function FeatureCard(props) {
             {props.title && !Array.isArray(props.title) && <h2 className="text-center fw-bold">{props.title}</h2>}
             {props.title && Array.isArray(props.title) && <h2 className="text-center fw-bold">
                 {props.title.map((item, i) => {
-                    return item.label == 'breakpoint' ? <br /> : <TextViewer color={item.color} className={item.class}>{item.value} </TextViewer>
+                    return item.label == 'breakpoint' ? <br /> : <TextViewer key={item.value+i} color={item.color} className={item.class}>{item.value} </TextViewer>
                 })}
             </h2>}
             {props.subTitle && <p className="py-4 text-center ws-1 light-gray">{props.subTitle}</p>}

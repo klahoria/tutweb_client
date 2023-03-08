@@ -2,6 +2,7 @@ import { Route, Router, Routes } from 'react-router-dom';
 import './App.css';
 import Auth from './components/Auth/Auth'
 import Dashboard from './components/Dashboard/Dashboard'
+import Login from './components/Login/Login';
 
 function App() {
   return (

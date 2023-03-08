@@ -3,6 +3,7 @@ import ToggleButton from '../ToggleButton/ToggleButton'
 import './Auth.css'
 import Login from '../Login/Login'
 import Register from '../Register/Register'
+import { Navigate } from 'react-router'
 
 function Auth() {
     const [activeScreen, Setactive] = useState('Login')
@@ -14,8 +15,13 @@ function Auth() {
             Setactive('Login')
         }
     }
+
+    const [token, setToken] = useState(true);
+    
+    
     return (
         <div className="vh-100 col-12">
+            {token && <Navigate to="/" />}
             <div className='h-100 row'>
                 <div className="col-md-6 px-0 d-none d-md-block login_screen">
                     <div className="col-12 px-0 text-center">
