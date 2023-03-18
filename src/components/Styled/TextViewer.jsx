@@ -9,6 +9,7 @@ const TextView = styled.span`
         margin-bottom: 0px;
         text-align: ${props.textAlign || 'left'};
         color: ${props.color || '#000'};
+        max-width: ${props.maxWidth};
         ${props.style}
         `
     }}
