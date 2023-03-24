@@ -15,7 +15,7 @@ const UserImage = styled.img`
         return css`
         margin-bottom: 0px;
         max-height: ${props.height || '250px'};
-        ${props.style}
+        ${props.design}
         `
     }}
 `

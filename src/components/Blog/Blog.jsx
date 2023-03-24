@@ -5,6 +5,7 @@ import TextViewer from '../Styled/TextViewer';
 import Image from '../Styled/Image/Image';
 import './Blog.css';
 import Button from '../Button/Button';
+import ImageCard from '../Styled/Card/ImageCard';
 
 
 function Blog() {
@@ -35,6 +36,31 @@ function Blog() {
           <Image src="image/png/blog/blogCard (2).png" subtitle="React" style={{ width: "calc(100%/4)", maxWidth: "300px", minWidth: "300px" }} class="py-3" alt="" />
           <Image src="image/png/blog/blogCard (3).png" subtitle="PHP" style={{ width: "calc(100%/4)", maxWidth: "300px", minWidth: "300px" }} class="py-3" alt="" />
           <Image src="image/png/blog/blogCard (4).png" subtitle="JavaScript" style={{ width: "calc(100%/4)", maxWidth: "300px", minWidth: "300px" }} class="py-3" alt="" />
+        </div>
+      </div>
+      <div className="col-12 p-5" style={{ background: "#EBF5FF" }}>
+        <div className="row justify-content-between">
+          <ImageCard show_more='1' textColor="#696984" SubTitleColor="#696984" />
+          <ImageCard show_more='1' textColor="#696984" SubTitleColor="#696984" />
+          <ImageCard show_more='1' textColor="#696984" SubTitleColor="#696984" />
+          <ImageCard show_more='1' textColor="#696984" SubTitleColor="#696984" />
+        </div>
+      </div>
+
+      <div className="col-12 p-5" >
+        <div className="d-flex  justify-content-between">
+          <span className="fw-semibold py-3">Marketing Articles</span>
+          <span style={{ color: "var(--dark-green)" }} className="fw-semibold pointer">See All</span>
+        </div>
+        <div className="row justify-content-between">
+          <ImageCard width={5} price="90" textColor="#696984" SubTitleColor="#696984" />
+          <ImageCard width={5} price="90" textColor="#696984" SubTitleColor="#696984" />
+          <ImageCard width={5} price="90" textColor="#696984" SubTitleColor="#696984" />
+          <ImageCard width={5} price="90" textColor="#696984" SubTitleColor="#696984" />
+          <ImageCard width={5} price="90" textColor="#696984" SubTitleColor="#696984" />
+          <ImageCard width={5} price="90" textColor="#696984" SubTitleColor="#696984" />
+          <ImageCard width={5} price="90" textColor="#696984" SubTitleColor="#696984" />
+          <ImageCard width={5} price="90" textColor="#696984" SubTitleColor="#696984" />
         </div>
       </div>
 
